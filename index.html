@@ -1,0 +1,187 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title> TFGAN: A High-Fidelity Adversarial Vocoder by Learning Waveform in Time and Frequency Domain Simultaneously </title>
+  </head>
+    <h1> TFGAN: A High-Fidelity Adversarial Vocoder by Learning Waveform in Time and Frequency Domain Simultaneously </h1>
+
+  <body>
+
+    <p><b>Paper</b>: <a href="https://arxiv.org/abs/2005.05551">arXiv<a></p>
+    <p><b>Authors:</b> Qiao Tian, Yi Chen, Zewang Zhang, Heng Lu, Linghui Chen, Lei Xie</p>
+    <p><b>Abstract:</b> 
+      TODO
+    </p>
+    <div>
+      <h3> Inverting Ground-Truth Aligned Mel-Spectrograms From Tacotron2 </h3>
+      <h3> </h3>
+
+    <table>
+      <thead>
+        <tr>
+          </th><th>Ground Truth</th></th><th>WaveRNN</th><th>MelGAN</th><th>MelGAN(+STFT Loss)</th><th>TFGAN(ours)</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td colspan="5"><span>1: 调查组织者估计全球有七点一亿人有意移民他国，占世界总人口的百分之十四。 </td></span>
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/GTA/Record/1.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/GTA/WaveRNN/1.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/GTA/MelGAN/1.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/GTA/MelGAN_STFT/1.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/GTA/TFGAN/1.wav" type="audio/wav"></audio></td>
+        </tr>
+
+        <tr>
+          <td colspan="5"><span>2: 近日我国多地迎来高温天气，且持续时间长局部强度大，天气酷热，很容易引起中暑。 </td></span>
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/GTA/Record/2.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/GTA/WaveRNN/2.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/GTA/MelGAN/2.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/GTA/MelGAN_STFT/2.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/GTA/TFGAN/2.wav" type="audio/wav"></audio></td>
+        </tr>
+
+
+        <tr>
+          <td colspan="5"><span>3: 社会资本投资人联合体成员代表，上海中建港务建设有限公司总经理肖飞也作了发言。 </td></span>
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/GTA/Record/3.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/GTA/WaveRNN/3.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/GTA/MelGAN/3.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/GTA/MelGAN_STFT/3.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/GTA/TFGAN/3.wav" type="audio/wav"></audio></td>
+        </tr>
+
+        <tr>
+          <td colspan="5"><span>4: 凭借着出色的演技和对角色深入的挖掘，郭彤彤让观众记住了这个凌玲身边的小角色。 </td></span>
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/GTA/Record/4.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/GTA/WaveRNN/4.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/GTA/MelGAN/4.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/GTA/MelGAN_STFT/4.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/GTA/TFGAN/4.wav" type="audio/wav"></audio></td>
+        </tr>
+
+
+
+    </tbody>
+    </table>
+    
+    <h3> Text-to-speech </h3>
+
+    <table>
+      <thead>
+      </thead>
+
+
+      <thead>
+        <tr>
+          </th><th>WaveRNN</th><th>MelGAN</th><th>MelGAN(+STFT Loss)</th><th>TFGAN(ours)</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td colspan="4"><span>1: 生活总不完美，总有辛酸的泪，总有失足的悔，总有幽深的怨，总有抱憾的恨。</td></spa>
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/TTS/WaveRNN/1.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/MelGAN/1.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/MelGAN_STFT/1.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/TFGAN/1.wav" type="audio/wav"></audio></td>
+        </tr>
+
+        <tr>
+          <td colspan="4"><span>2: 之前宣布延期举办的上海国际电影节和上海电视节有了最新进展。6月30日，中国证券报记者从多位影视行业人士处获悉，第23届上海国际电影节将重启，在端午节前获得了国家电影局的批复，将于7月底举办。 </td></spa>
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/TTS/WaveRNN/2.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/MelGAN/2.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/MelGAN_STFT/2.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/TFGAN/2.wav" type="audio/wav"></audio></td>
+        </tr>
+
+        <tr>
+          <td colspan="4"><span>3: 利物浦主帅克洛普对凯塔可是相当器重，为了表现诚意，利物浦提前一年跟莱比锡签订了买断协议，却把几内亚中场免费回租给德甲球队使用一年，可见红军做出了相当大的让步。 </td></spa>
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/TTS/WaveRNN/3.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/MelGAN/3.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/MelGAN_STFT/3.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/TFGAN/3.wav" type="audio/wav"></audio></td>
+        </tr>
+
+
+        <tr>
+          <td colspan="4"><span>4: 今天起到18日，西南地区东部、西北地区中部和东南部、江汉等地的部分地区将有中到大雨。 </td></spa>
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/TTS/WaveRNN/4.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/MelGAN/4.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/MelGAN_STFT/4.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/TFGAN/4.wav" type="audio/wav"></audio></td>
+        </tr>
+        
+
+      </tbody>
+    </table>
+
+
+    <h3> Text-to-speech with TFGAN for English Speaker </h3>
+
+    <table>
+      <thead>
+      </thead>
+
+
+      <tbody>
+
+        <tr>
+          <td colspan="4"><span>1: Clearly prosody is important in speech generated by machines, Ostendorf said. </td></spa>
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/TTS/Eng/1.wav" type="audio/wav"></audio></td>
+
+        </tr>
+
+        <tr>
+          <td colspan="4"><span>2: Condors, also bioaccumulate, lead, when they consume flesh, discarded by hunters. </td></spa>
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/TTS/Eng/2.wav" type="audio/wav"></audio></td>
+
+        </tr>
+
+        <tr>
+          <td colspan="4"><span>3: In fact, what Margie is the most worried about now, more than either physical or financial needs, is Jerry's emotional state. </td></spa>
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/TTS/Eng/3.wav" type="audio/wav"></audio></td>
+
+        </tr>
+
+
+        <tr>
+          <td colspan="4"><span>4: But it is not so obvious that recombination is a good idea after all. </td></spa>
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/TTS/Eng/4.wav" type="audio/wav"></audio></td>
+
+        </tr>
+        
+
+      </tbody>
+    </table>
+
+
+
+  </body>
+</html>
